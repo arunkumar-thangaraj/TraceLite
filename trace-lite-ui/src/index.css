@@ -1,0 +1,130 @@
+/* =========================================================
+   DESIGN TOKENS
+   ========================================================= */
+
+:root {
+  /* Surfaces — gray-blue canvas so white cards stand out */
+  --color-bg: #eef2f7;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-surface-hover: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* Sidebar */
+  --color-sidebar: #0f172a;
+  --color-sidebar-hover: #1e293b;
+  --color-sidebar-border: #1e293b;
+  --color-sidebar-text: #94a3b8;
+  --color-sidebar-text-strong: #f8fafc;
+  --sidebar-width: 248px;
+
+  /* Accent tiles for metric icons */
+  --tile-blue-bg: #e0ecff;
+  --tile-blue-fg: #2563eb;
+  --tile-green-bg: #dcfce7;
+  --tile-green-fg: #16a34a;
+  --tile-amber-bg: #fef3c7;
+  --tile-amber-fg: #d97706;
+  --tile-red-bg: #fee2e2;
+  --tile-red-fg: #dc2626;
+  --tile-violet-bg: #ede9fe;
+  --tile-violet-fg: #7c3aed;
+
+  /* Text */
+  --color-text: #101828;
+  --color-text-secondary: #475467;
+  --color-text-muted: #667085;
+
+  /* Accent */
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-accent-soft: #eff4ff;
+  --color-focus-ring: rgba(37, 99, 235, 0.18);
+
+  /* Status */
+  --color-success: #067647;
+  --color-success-soft: #ecfdf3;
+  --color-success-dot: #12b76a;
+  --color-info: #175cd3;
+  --color-info-soft: #eff8ff;
+  --color-info-dot: #2e90fa;
+  --color-warning: #b54708;
+  --color-warning-soft: #fffaeb;
+  --color-warning-dot: #f79009;
+  --color-danger: #b42318;
+  --color-danger-soft: #fef3f2;
+  --color-danger-border: #fecdca;
+  --color-danger-dot: #f04438;
+
+  /* Code */
+  --color-code-bg: #0f172a;
+  --color-code-text: #e2e8f0;
+
+  /* Shape */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.08),
+    0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-card-hover: 0 8px 20px rgba(15, 23, 42, 0.08);
+
+  /* Type */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Code", Consolas,
+    monospace;
+
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

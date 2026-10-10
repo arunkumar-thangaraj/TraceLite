@@ -1,0 +1,8 @@
+# Personal files
+AZ-900.pdf
+
+# Editor / OS
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
