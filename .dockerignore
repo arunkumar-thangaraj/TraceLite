@@ -1,0 +1,6 @@
+# Only TraceLite.Api is needed to build the API image
+trace-lite-ui/
+**/bin/
+**/obj/
+**/.vs/
+.git/

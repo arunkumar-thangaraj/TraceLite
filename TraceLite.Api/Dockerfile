@@ -2,7 +2,9 @@
 
 WORKDIR /src
 
-COPY . .
+# The build context is the repository root:
+#   docker build -f TraceLite.Api/Dockerfile .
+COPY TraceLite.Api/ .
 
 RUN dotnet restore TraceLite.Api.csproj
 RUN dotnet publish TraceLite.Api.csproj -c Release -o /app/publish
