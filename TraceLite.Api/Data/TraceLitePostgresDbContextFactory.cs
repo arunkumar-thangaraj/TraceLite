@@ -23,15 +23,15 @@ namespace TraceLite.Api.Data
                 .Build();
 
             var connectionString =
-                configuration.GetConnectionString("SUPABASE_MIGRATION_CONNECTION_STRING")
-                ?? configuration.GetConnectionString("SUPABASE_CONNECTION_STRING");
+                configuration.GetConnectionString("NEON_MIGRATION_CONNECTION_STRING")
+                ?? configuration.GetConnectionString("NEON_CONNECTION_STRING");
 
             if (string.IsNullOrWhiteSpace(connectionString))
             {
                 throw new InvalidOperationException(
                     "No connection string found. Set either " +
-                    "ConnectionStrings:SUPABASE_MIGRATION_CONNECTION_STRING or " +
-                    "ConnectionStrings:SUPABASE_CONNECTION_STRING in appsettings.");
+                    "ConnectionStrings:NEON_MIGRATION_CONNECTION_STRING or " +
+                    "ConnectionStrings:NEON_CONNECTION_STRING in user secrets or environment variables.");
             }
 
             var optionsBuilder =

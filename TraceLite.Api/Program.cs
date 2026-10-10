@@ -14,17 +14,17 @@ builder.Services.AddSwaggerGen();
 
 // Database (PostgreSQL). The connection string is never stored in
 // appsettings: use `dotnet user-secrets` locally and the
-// ConnectionStrings__SUPABASE_CONNECTION_STRING environment variable
+// ConnectionStrings__NEON_CONNECTION_STRING environment variable
 // in deployed environments.
 var connectionString =
-    builder.Configuration.GetConnectionString("SUPABASE_CONNECTION_STRING");
+    builder.Configuration.GetConnectionString("NEON_CONNECTION_STRING");
 
 if (string.IsNullOrWhiteSpace(connectionString))
 {
     throw new InvalidOperationException(
-        "Connection string 'SUPABASE_CONNECTION_STRING' was not found. " +
-        "Set it with `dotnet user-secrets set \"ConnectionStrings:SUPABASE_CONNECTION_STRING\" \"<value>\"` " +
-        "or the ConnectionStrings__SUPABASE_CONNECTION_STRING environment variable.");
+        "Connection string 'NEON_CONNECTION_STRING' was not found. " +
+        "Set it with `dotnet user-secrets set \"ConnectionStrings:NEON_CONNECTION_STRING\" \"<value>\"` " +
+        "or the ConnectionStrings__NEON_CONNECTION_STRING environment variable.");
 }
 
 // TraceLite tracing and trace store. This API also serves the dashboard,

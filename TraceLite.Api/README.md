@@ -62,7 +62,7 @@ builder.Services.AddTraceLite(connectionString, options =>
 ## See the traces
 
 1. Run `TraceLite.Api` against the same database:
-   `ConnectionStrings__SUPABASE_CONNECTION_STRING=<your trace database>`
+   `ConnectionStrings__NEON_CONNECTION_STRING=<your trace database>`
 2. Point the dashboard UI at it with `VITE_API_BASE_URL`.
 3. Open a request to see its SQL queries, its outbound calls and the timeline.
 
