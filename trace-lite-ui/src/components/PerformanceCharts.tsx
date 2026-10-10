@@ -33,8 +33,8 @@ const AXIS_TICK = { fill: "#64748b", fontSize: 12 };
 
 const GRID_COLOR = "#e2e8f0";
 
-/* Bars stay neutral blue; only errors get a warning color */
-const BAR_COLOR = "#3b82f6";
+/* Bars use the indigo accent; only errors get a warning color */
+const BAR_COLOR = "#6366f1";
 
 const STATUS_GROUP_LABELS: Record<string, string> = {
   "1xx": "Informational",
